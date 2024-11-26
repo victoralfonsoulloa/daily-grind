@@ -2,20 +2,28 @@
 html {background-color:#ccc;}
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
 	max-width:960px; /* keeps from getting too large on wide screen */
 	width:90%; /* shrink to fit screen */
 	margin:auto; /* center in html element */
-	background-color:#fff;
-	padding:20px;
+	background-color:rgba(255, 255, 255, 0.5);
 	min-height:100%; /* keeps from getting too large on wide screen */
+	border-radius: 2rem 0 2rem 0;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 
+	0 4px 6px rgba(0, 0, 0, 0.15);
 	}
+
+header {
+	background-color: rgba(0, 0, 0, 0.925);
+	margin-top: 20px;
+	border-radius: 2rem 0 2rem 0;
+}	
+
 img.flexible {
-	float:right;
-	display:inline-block;
-	padding:20px;
-	max-width:300px; /* actual size of image */
-	width:33%; /* approximate size taken on screen in maximum view */
+	display: block;
+	object-fit: cover;
+	width: 50%;
+	height: 200px;
+	margin: 0 auto;
 }
 p {margin:10px;}
 h1,h2,h3,h4,h5,h6{
